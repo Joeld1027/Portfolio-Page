@@ -1,0 +1,97 @@
+import React from 'react';
+import {
+	Segment,
+	Card,
+	Header,
+	Divider,
+	Container,
+	Image,
+} from 'semantic-ui-react';
+import nodeImage from '../../images/skillsImages/node.png';
+import ReactImage from '../../images/skillsImages/ReactImage.jpg';
+import MongoImage from '../../images/skillsImages/mongo.png';
+import ExpressImage from '../../images/skillsImages/express.jpeg';
+import ReduxImage from '../../images/skillsImages/redux.png';
+import ApiImage from '../../images/skillsImages/rest.png';
+import BootstrapImage from '../../images/skillsImages/bootstrap.png';
+import FrontendImage from '../../images/skillsImages/frontend.jpg';
+
+const SkillsSection = () => {
+	return (
+		<Container className='section-containers'>
+			<Header
+				className='section-headers'
+				as='h1'
+				content='Tech-stack'
+				color='orange'
+			/>
+			<Header
+				as='h3'
+				content='Some of the technologies I use.'
+				color='orange'
+			/>
+			<Divider section inverted />
+			<Segment padded basic textAlign='center'>
+				<Card.Group itemsPerRow={4} stackable>
+					<Card
+						raised
+						image={ReactImage}
+						header='React JS'
+						description='Elliot is a sound engineer living in Nashville who
+								enjoys playing guitar and hanging with his cat.'
+					/>
+
+					<Card raised>
+						<Image ui={false} wrapped src={nodeImage} />
+						<Card.Content>
+							<Card.Header>Node JS</Card.Header>
+							<Card.Description>
+								Elliot is a sound engineer living in Nashville who
+								enjoys playing guitar and hanging with his cat.
+							</Card.Description>
+						</Card.Content>
+					</Card>
+
+					<Card
+						raised
+						image={MongoImage}
+						header='MongoDB'
+						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+					/>
+					<Card
+						raised
+						image={ExpressImage}
+						header='Express JS'
+						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+					/>
+					<Card
+						raised
+						image={ReduxImage}
+						header='Redux JS'
+						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+					/>
+					<Card
+						raised
+						image={ApiImage}
+						header='REST API'
+						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+					/>
+					<Card
+						raised
+						image={BootstrapImage}
+						header='Bootstrap'
+						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+					/>
+					<Card
+						raised
+						image={FrontendImage}
+						header='Web-Development'
+						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+					/>
+				</Card.Group>
+			</Segment>
+		</Container>
+	);
+};
+
+export default SkillsSection;
