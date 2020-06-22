@@ -1,8 +1,8 @@
 .section-containers {
-	margin: 5em 0em;
+	margin: 7em 0em 4em 0em;
 }
 p {
-	font-size: larger;
+	font-size: 1.5em;
 	color: #c2c2c2;
 	font-family: 'Inconsolata', monospace;
 }

@@ -6,6 +6,7 @@ import {
 	Button,
 	Container,
 } from 'semantic-ui-react';
+import TypedComponent from '../typedcomponent/Typed.component';
 
 const HeroSection = () => {
 	return (
@@ -13,20 +14,21 @@ const HeroSection = () => {
 			<Container>
 				<Segment basic>
 					<Header as='h1' style={{ fontSize: '4em' }}>
-						Joel D. <span style={{ color: 'orange' }}>Infante</span>
+						Hi I'm Joel, let me bring your <span>ideas</span> to{' '}
+						<span>life</span>.
 					</Header>
-					<Header textAlign='right'>
-						<Header
-							content='Let me build your dream ideas.'
-							as='h2'
-							color='yellow'
-						/>
-						<Button
-							icon='fork'
-							size='huge'
-							color='linkedin'
-							content='Check My Projects'
-						/>
+					<Header textAlign='center'>
+						<TypedComponent />
+						<div className='button-wrapper'>
+							<Button
+								floated='right'
+								icon='fork'
+								size='massive'
+								inverted
+								color='orange'
+								content='Check My Projects'
+							/>
+						</div>
 					</Header>
 				</Segment>
 			</Container>

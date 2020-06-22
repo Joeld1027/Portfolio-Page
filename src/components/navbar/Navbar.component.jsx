@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { NavbarContainer } from './navbar.styles';
 import { Container } from 'semantic-ui-react';
 
@@ -7,24 +7,23 @@ const Navbar = () => {
 	return (
 		<Container>
 			<NavbarContainer>
-				<h1 className='name-logo'>
-					Joel D. <span>Infante</span>
-				</h1>
 				<ul>
 					<li>
-						<Link to='/'>Home</Link>
+						<NavLink exact to='/'>
+							Home
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/about'>About me</Link>
+						<NavLink to='/about'>About me</NavLink>
 					</li>
 					<li>
-						<Link to='/projects'>Projects</Link>
+						<NavLink to='/projects'>Projects</NavLink>
 					</li>
 					<li>
-						<Link to='/skills'>Skills</Link>
+						<NavLink to='/skills'>Skills</NavLink>
 					</li>
 					<li>
-						<Link to='/contact'>Contact</Link>
+						<NavLink to='/contact'>Contact</NavLink>
 					</li>
 				</ul>
 			</NavbarContainer>
