@@ -71,14 +71,14 @@ class TypedComponent extends React.Component {
 					}}
 				/>
 				<br />
-				{this.state.isDone && (
-					<span
-						className='animated-span'
-						style={{ whiteSpace: 'pre' }}
-					>
-						I'm your developer.
-					</span>
-				)}
+
+				<span
+					className={`animated-span ${
+						this.state.isDone ? 'after-span' : ''
+					}`}
+				>
+					I'm your developer.
+				</span>
 			</div>
 		);
 	}

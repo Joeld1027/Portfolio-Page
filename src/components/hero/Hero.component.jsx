@@ -26,7 +26,7 @@ const HeroSection = () => {
 								size='massive'
 								inverted
 								color='orange'
-								content='Check My Projects'
+								content='Check My Work'
 							/>
 						</div>
 					</Header>

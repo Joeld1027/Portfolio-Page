@@ -6,14 +6,6 @@ const SocialButtons = ({ projectGit, liveUrl }) => {
 		<div>
 			<Button
 				inverted
-				href='https://www.linkedin.com/in/joel-infante-10953a93/'
-				size='big'
-				icon='linkedin'
-				circular
-				color='black'
-			/>
-			<Button
-				inverted
 				href={projectGit}
 				content='<code>'
 				size='big'
@@ -21,15 +13,17 @@ const SocialButtons = ({ projectGit, liveUrl }) => {
 				circular
 				color='black'
 			/>
-			<Button
-				inverted
-				href={liveUrl}
-				content='Live-Demo'
-				size='big'
-				icon='fork'
-				circular
-				color='orange'
-			/>
+			{liveUrl && (
+				<Button
+					inverted
+					href={liveUrl}
+					content='Live-Demo'
+					size='big'
+					icon='fork'
+					circular
+					color='orange'
+				/>
+			)}
 		</div>
 	);
 };
