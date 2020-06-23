@@ -33,60 +33,24 @@ const SkillsSection = () => {
 			<Divider section inverted />
 			<Segment padded basic textAlign='center'>
 				<Card.Group itemsPerRow={4} stackable>
-					<Card
-						raised
-						image={ReactImage}
-						header='React JS'
-						description='Elliot is a sound engineer living in Nashville who
-								enjoys playing guitar and hanging with his cat.'
-					/>
+					<Card raised image={ReactImage} header='React JS' />
 
 					<Card raised>
 						<Image ui={false} wrapped src={nodeImage} />
 						<Card.Content>
 							<Card.Header>Node JS</Card.Header>
-							<Card.Description>
-								Elliot is a sound engineer living in Nashville who
-								enjoys playing guitar and hanging with his cat.
-							</Card.Description>
 						</Card.Content>
 					</Card>
 
-					<Card
-						raised
-						image={MongoImage}
-						header='MongoDB'
-						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-					/>
-					<Card
-						raised
-						image={ExpressImage}
-						header='Express JS'
-						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-					/>
-					<Card
-						raised
-						image={ReduxImage}
-						header='Redux JS'
-						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-					/>
-					<Card
-						raised
-						image={ApiImage}
-						header='REST API'
-						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-					/>
-					<Card
-						raised
-						image={BootstrapImage}
-						header='Bootstrap'
-						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-					/>
+					<Card raised image={MongoImage} header='MongoDB' />
+					<Card raised image={ExpressImage} header='Express JS' />
+					<Card raised image={ReduxImage} header='Redux JS' />
+					<Card raised image={ApiImage} header='REST API' />
+					<Card raised image={BootstrapImage} header='Bootstrap' />
 					<Card
 						raised
 						image={FrontendImage}
 						header='Web-Development'
-						description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
 					/>
 				</Card.Group>
 			</Segment>

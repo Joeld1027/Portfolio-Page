@@ -4,7 +4,7 @@ import { Container, Form, Button, Header } from 'semantic-ui-react';
 const Contact = () => {
 	return (
 		<Container
-			style={{ marginBottom: '10em' }}
+			style={{ marginBottom: '14em' }}
 			text
 			className='section-containers'
 		>

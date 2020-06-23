@@ -10,7 +10,7 @@ import {
 import ReactLogo from '../../images/techstack/React2.png';
 import CSSLogo from '../../images/techstack/CSS.png';
 import ExpressLogo from '../../images/techstack/Express.png';
-import HTMLLogo from '../../images/techstack/HTML.jpg';
+import HTMLLogo from '../../images/techstack/html.png';
 import JavascriptLogo from '../../images/techstack/Javascript2.png';
 import MongoLogo from '../../images/techstack/Mongo.png';
 import ReduxLogo from '../../images/techstack/Redux.png';
@@ -25,7 +25,10 @@ import TechStack from '../techstack/TechStackImages.component';
 
 const ProjectsSection = () => {
 	return (
-		<Container className='section-containers project-section'>
+		<Container
+			style={{ height: '100%' }}
+			className='section-containers project-section'
+		>
 			<Header
 				className='section-headers'
 				color='orange'

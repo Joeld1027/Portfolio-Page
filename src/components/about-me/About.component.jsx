@@ -10,7 +10,10 @@ import avatarImg from '../../images/profileImage.jpg';
 
 const About = () => {
 	return (
-		<Container className='section-containers'>
+		<Container
+			style={{ minHeight: '70vh' }}
+			className='section-containers'
+		>
 			<Header
 				className='section-headers'
 				color='orange'
@@ -50,6 +53,13 @@ const About = () => {
 					</Item.Content>
 				</Item>
 			</Item.Group>
+			<Header
+				as='h2'
+				style={{ color: '#fff', marginTop: '3em', display: 'flex' }}
+			>
+				Email: &nbsp;
+				<p style={{ fontSize: '1em' }}> Joel@joeldinfante.com</p>
+			</Header>
 		</Container>
 	);
 };

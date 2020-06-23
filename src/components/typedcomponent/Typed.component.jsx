@@ -70,6 +70,7 @@ class TypedComponent extends React.Component {
 						this.el = el;
 					}}
 				/>
+
 				<br />
 
 				<span
