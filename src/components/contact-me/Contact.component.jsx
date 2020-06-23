@@ -24,12 +24,16 @@ const Contact = () => {
 				as='h3'
 				content={
 					<p style={{ fontSize: '1.3em' }}>
-						Email me at Joel@joeldinfante.com
+						Email me Joel@joeldinfante.com
 					</p>
 				}
 			/>
 			<Divider
-				style={{ fontSize: '1.4em', color: '#f2711c' }}
+				style={{
+					fontSize: '1.4em',
+					color: '#f2711c',
+					padding: '0.5em 0em',
+				}}
 				horizontal
 			>
 				Or
