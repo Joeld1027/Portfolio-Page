@@ -6,7 +6,6 @@ import {
 	Button,
 	Form,
 } from 'semantic-ui-react';
-import { FormContainer } from './Contact.styles';
 
 const Contact = () => {
 	const encode = (data) => {
