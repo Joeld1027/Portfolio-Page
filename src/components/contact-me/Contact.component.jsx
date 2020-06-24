@@ -38,11 +38,16 @@ const Contact = () => {
 			>
 				Or
 			</Divider>
-			<Form size='large' inverted>
-				<Form.Input label='Name' />
-				<Form.Input label='Email' />
-				<Form.TextArea rows={8} label='Message' />
-				<Button floated='right' color='orange'>
+			<Form
+				method='POST'
+				name='contact'
+				size='large'
+				inverted
+				data-netlify='true'
+			>
+				<Form.Input name='email' label='Enter your email' />
+				<Form.TextArea name='message' rows={8} label='Message' />
+				<Button type='submit' floated='right' color='orange'>
 					Submit
 				</Button>
 			</Form>

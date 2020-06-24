@@ -5,7 +5,6 @@ import {
 	Header,
 	Divider,
 	Container,
-	Image,
 } from 'semantic-ui-react';
 import nodeImage from '../../images/skillsImages/node.png';
 import ReactImage from '../../images/skillsImages/ReactImage.jpg';
@@ -32,16 +31,9 @@ const SkillsSection = () => {
 			/>
 			<Divider section inverted />
 			<Segment padded basic textAlign='center'>
-				<Card.Group itemsPerRow={4} stackable>
+				<Card.Group itemsPerRow={4} className='skill-cards'>
 					<Card raised image={ReactImage} header='React JS' />
-
-					<Card raised>
-						<Image ui={false} wrapped src={nodeImage} />
-						<Card.Content>
-							<Card.Header>Node JS</Card.Header>
-						</Card.Content>
-					</Card>
-
+					<Card raised image={nodeImage} header='Node JS' />
 					<Card raised image={MongoImage} header='MongoDB' />
 					<Card raised image={ExpressImage} header='Express JS' />
 					<Card raised image={ReduxImage} header='Redux JS' />

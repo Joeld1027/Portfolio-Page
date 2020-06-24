@@ -47,7 +47,7 @@ const ProjectsSection = () => {
 						<Item.Image size='large' src={creativej} />
 						<Item.Content className='project-content'>
 							<Header textAlign='right' as='h1'>
-								CreativeJ Project Management App
+								Project Management App
 							</Header>
 							<Item.Description>
 								<p>
