@@ -1,11 +1,11 @@
 import React from 'react';
 import {
 	Container,
-	Form,
-	Button,
 	Header,
 	Divider,
+	Button,
 } from 'semantic-ui-react';
+import { FormContainer } from './Contact.styles';
 
 const Contact = () => {
 	return (
@@ -38,19 +38,19 @@ const Contact = () => {
 			>
 				Or
 			</Divider>
-			<Form
-				method='POST'
-				name='contact'
-				size='large'
-				inverted
-				data-netlify='true'
-			>
-				<Form.Input name='email' label='Enter your email' />
-				<Form.TextArea name='message' rows={8} label='Message' />
-				<Button type='submit' floated='right' color='orange'>
-					Submit
-				</Button>
-			</Form>
+			<FormContainer>
+				<form name='contact' method='POST' data-netlify='true'>
+					<label>Enter your email</label>
+					<input type='email' name='email' />
+
+					<label>Message</label>
+					<textarea rows='8' name='message' />
+
+					<Button color='orange' inverted type='submit'>
+						Send
+					</Button>
+				</form>
+			</FormContainer>
 		</Container>
 	);
 };
