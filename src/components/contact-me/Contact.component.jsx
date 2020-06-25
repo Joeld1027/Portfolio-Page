@@ -5,9 +5,12 @@ import {
 	Divider,
 	Button,
 	Form,
+	Message,
 } from 'semantic-ui-react';
 
 const Contact = () => {
+	const [isMessageSent, setIsMessageSent] = useState(false);
+
 	const encode = (data) => {
 		return Object.keys(data)
 			.map(
@@ -30,8 +33,12 @@ const Contact = () => {
 			},
 			body: encode({ 'form-name': 'contact', ...formData }),
 		})
-			.then(() => alert('Success!'))
+			.then(() => setIsMessageSent(true))
 			.catch((error) => alert(error));
+		setFormData({ email: '', message: '' });
+		setTimeout(() => {
+			setIsMessageSent(false);
+		}, 5000);
 
 		e.preventDefault();
 	};
@@ -69,6 +76,9 @@ const Contact = () => {
 			>
 				Or
 			</Divider>
+			{isMessageSent && (
+				<Message success header='Your message was sent!' />
+			)}
 			<Form onSubmit={handleSubmit} size='large' inverted>
 				<Form.Input
 					onChange={handleChange}

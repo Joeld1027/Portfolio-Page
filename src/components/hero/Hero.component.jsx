@@ -13,7 +13,7 @@ const HeroSection = () => {
 		<HeroContainer>
 			<Container>
 				<Segment basic>
-					<Header as='h1' style={{ fontSize: '4em' }}>
+					<Header className='hero-message' as='h1'>
 						Hi I'm Joel, let me bring your <span>ideas</span> to{' '}
 						<span>life</span>.
 					</Header>

@@ -32,8 +32,11 @@ h3 {
 /* Media queries */
 
 /* skill cards */
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
 	.skill-cards .header {
-		font-size: 0.8em !important;
+		font-size: 0.7em !important;
+	}
+	.skill-cards div.ui .content {
+		padding: 0.2em !important;
 	}
 }

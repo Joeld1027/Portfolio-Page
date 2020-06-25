@@ -24,13 +24,6 @@ const Footer = () => {
 						icon='linkedin'
 						color='black'
 					/>
-					<Button
-						inverted
-						circular
-						href='https://www.linkedin.com/in/joel-infante-10953a93/'
-						icon='facebook f'
-						color='black'
-					/>
 				</div>
 			</Container>
 		</FooterContainer>

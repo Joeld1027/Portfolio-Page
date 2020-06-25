@@ -27,6 +27,9 @@ export const FooterContainer = styled.div`
 	.footer-social {
 		a {
 			margin-left: 3em;
+			@media (max-width: 600px) {
+				margin-left: 1em;
+			}
 		}
 	}
 `;

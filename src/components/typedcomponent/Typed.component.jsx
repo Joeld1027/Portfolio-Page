@@ -6,27 +6,26 @@ class TypedComponent extends React.Component {
 		super(props);
 
 		this.state = {
-			isDone: false,
+			isDoneTyping: false,
 		};
 	}
 
 	componentDidMount() {
-		const settingState = () => {
+		const setIsDoneTyping = () => {
 			this.setState(() => {
-				return { isDone: true };
+				return { isDoneTyping: true };
 			});
 		};
-		const unSettingState = () => {
+		const unSetIsDoneTyping = () => {
 			this.setState(() => {
-				return { isDone: false };
+				return { isDoneTyping: false };
 			});
 		};
-		// If you want to pass more options as props, simply add
-		// your desired props to this destructuring assignment.
+
 		const strings = [
-			' Hi there!',
-			'need help with a site?',
-			"I'll make your site stand out from the competition",
+			'Hi there!',
+			'need help with your site?',
+			'want your site to standout?',
 			'contact me, ',
 		];
 
@@ -38,10 +37,10 @@ class TypedComponent extends React.Component {
 			backDelay: 700,
 			startDelay: 400,
 			onBegin: function () {
-				unSettingState();
+				unSetIsDoneTyping();
 			},
 			onComplete: function (self) {
-				settingState();
+				setIsDoneTyping();
 				setTimeout(function () {
 					handleReset();
 				}, 2000);
@@ -75,7 +74,7 @@ class TypedComponent extends React.Component {
 
 				<span
 					className={`animated-span ${
-						this.state.isDone ? 'after-span' : ''
+						this.state.isDoneTyping ? 'after-span' : ''
 					}`}
 				>
 					I'm your developer.
