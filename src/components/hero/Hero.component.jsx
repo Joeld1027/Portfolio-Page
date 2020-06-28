@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { HeroContainer } from './hero.styles';
 import {
 	Segment,
@@ -20,14 +21,16 @@ const HeroSection = () => {
 					<Header textAlign='center'>
 						<TypedComponent />
 						<div className='button-wrapper'>
-							<Button
-								floated='right'
-								icon='fork'
-								size='massive'
-								inverted
-								color='orange'
-								content='Check My Work'
-							/>
+							<Link to='/projects'>
+								<Button
+									floated='right'
+									icon='fork'
+									size='massive'
+									inverted
+									color='orange'
+									content='Check My work'
+								/>
+							</Link>
 						</div>
 					</Header>
 				</Segment>
